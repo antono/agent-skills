@@ -1,6 +1,6 @@
 ---
 name: ck-grep-search
-description: Semantic, hybrid and lexical (grep-like) search in project code using `ck` (embeddings + regex)
+description: "Powerful multi-mode code search with 'ck': fast lexical (grep/ripgrep-style) patterns, embeddings-based semantic retrieval to find code by meaning, and hybrid (semantic+keyword) fusion. Includes usage examples, indexing notes, scoring details, and threshold guidance."
 ---
 
 # ck search

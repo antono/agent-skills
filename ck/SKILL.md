@@ -1,21 +1,30 @@
 ---
 name: ck-grep-search
-description: Semantic or hybryd search (grep like) in project code
+description: Semantic, hybrid and lexical (grep-like) search in project code using `ck` (embeddings + regex)
 ---
 
 # ck search
 
-This skill explains how to use `ck` tool to do semantic or hybrid search in
-project.
+This skill explains how to use the `ck` tool to do semantic, hybrid, or classic
+lexical searches across a project repository. `ck` combines three complementary
+modes:
 
-`ck` is a drop-in replacement for grep/ripgrep. All your knowledge about `grep`
-or `rg` will be relevant.
+- Lexical: fast pattern/regex matching (like `grep` / `rg`).
+- Semantic: embeddings-based retrieval to find code "by meaning" even when
+  terminology differs.
+- Hybrid: combines semantic relevance with keyword constraints (reciprocal
+  rank fusion) to get precise results.
+
+`ck` is a drop-in replacement for `grep`/`rg` for everyday pattern searches,
+and it adds powerful semantic and hybrid modes once you index the repo.
+
+Very short: Use when grep misses related code or you want to find code by
+meaning (semantic) or combine keywords with concept-level matches (hybrid).
 
 ## When to use
 
-Use semantic to search by code meaning meaning, not just keywords. Semantic
-search understands concepts and finds related code even when exact terms don’t
-match.
+Use semantic to search by code meaning, not just keywords. Semantic search
+understands concepts and finds related code even when exact terms don’t match.
 
 Use hybrid when:
 

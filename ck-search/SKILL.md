@@ -1,5 +1,5 @@
 ---
-name: ck-grep-search
+name: ck-search
 description: "Powerful multi-mode code search with 'ck': fast lexical (grep/ripgrep-style) patterns, embeddings-based semantic retrieval to find code by meaning, and hybrid (semantic+keyword) fusion. Includes usage examples, indexing notes, scoring details, and threshold guidance."
 ---
 
@@ -12,11 +12,11 @@ modes:
 - Lexical: fast pattern/regex matching (like `grep` / `rg`).
 - Semantic: embeddings-based retrieval to find code "by meaning" even when
   terminology differs.
-- Hybrid: combines semantic relevance with keyword constraints (reciprocal
-  rank fusion) to get precise results.
+- Hybrid: combines semantic relevance with keyword constraints (reciprocal rank
+  fusion) to get precise results.
 
-`ck` is a drop-in replacement for `grep`/`rg` for everyday pattern searches,
-and it adds powerful semantic and hybrid modes once you index the repo.
+`ck` is a drop-in replacement for `grep`/`rg` for everyday pattern searches, and
+it adds powerful semantic and hybrid modes once you index the repo.
 
 Very short: Use when grep misses related code or you want to find code by
 meaning (semantic) or combine keywords with concept-level matches (hybrid).

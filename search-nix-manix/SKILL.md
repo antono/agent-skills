@@ -83,6 +83,22 @@ Cache location: `~/.cache/manix/`
 | Not filtering sources            | Add `--source` to narrow results               |
 | Expecting JSON output            | manix outputs text, parse by `───` separators  |
 
+## Limitations
+
+### nixvim Options
+Manix does NOT natively support searching nixvim options.
+
+**Workaround:** Enable man page generation in nixvim config:
+```nix
+programs.nixvim = {
+  enable = true;
+  enableMan = true;  # Generates man pages for nixvim options
+};
+```
+After rebuilding, try: `manix <nixvim-option>` (may work with generated man pages).
+
+**Better alternative:** Use nixvim's [Option Search](https://nix-community.github.io/nixvim/) in the docs sidebar.
+
 ## Installation
 
 Available in nixpkgs (unstable):

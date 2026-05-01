@@ -10,6 +10,8 @@ description: Use when working on .nix files, flakes, Home Manager configs, or Ni
 Manix is a fast CLI for searching NixOS options, Home Manager options, nixpkgs
 docs, and lib functions. Replaces web search for Nix documentation.
 
+Repository: https://github.com/nix-community/manix
+
 ## When to Use
 
 - Editing `.nix` files and need option descriptions or types
@@ -106,7 +108,7 @@ Available in nixpkgs (unstable):
 ```bash
 nix-env -f '<nixpkgs>' -iA manix
 # or
-nix run github:mlvzk/manix
+nix run github:nix-community/manix
 ```
 
 Add to NixOS: `environment.systemPackages = [ pkgs.manix ];` Add to Home

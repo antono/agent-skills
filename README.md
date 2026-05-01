@@ -16,3 +16,10 @@ skills install https://github.com/antono/agent-skills --global
 git clone https://github.com/antono/agent-skills
 cp -r agent-skills/skill-name ~/.agents/skills/
 ```
+
+## Skills
+
+| Skill | Description |
+|-------|-------------|
+| [ck-search](ck-search/) | Powerful multi-mode code search with 'ck': fast lexical (grep/ripgrep-style) patterns, embeddings-based semantic retrieval to find code by meaning, and hybrid (semantic+keyword) fusion |
+| [search-nix-manix](search-nix-manix/) | Use when working on .nix files, flakes, Home Manager configs, or NixOS configurations and need to look up options, packages, or lib functions |
